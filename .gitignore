@@ -1,0 +1,39 @@
+# Entornos virtuales
+venv/
+env/
+ENV/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de prueba
+test_*.py
+temp/
+*.tmp
+
+# Logs
+*.log
+
+# Bases de datos locales
+*.db
+*.sqlite3
+
+# Archivos de configuración personal
+config.local.py
+secrets.py
