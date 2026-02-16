@@ -168,5 +168,5 @@ print("\nNota: __name__ == '__main__' solo cuando ejecutas el archivo directamen
 
 if __name__ == "__main__":
     print("\n" + "="*60)
-    print("FIN :) ")
+    print("FIN DE LOS APUNTES")
     print("="*60)
