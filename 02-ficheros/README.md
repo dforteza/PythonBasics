@@ -1,20 +1,21 @@
-# 04 - Manejo de Ficheros
+# 02 - Manejo de Ficheros
 
 Lectura, escritura y manipulación de archivos en Python.
 
+## Estructura del directorio
+
+```
+02-ficheros/
+├── apuntes_ficheros.py          # Apuntes y ejemplos de manejo de ficheros
+└── ejercicios/                  # Carpeta con ejercicios prácticos
+    ├── analizador_logs/         # Ejercicio: Analizador de archivos de logs
+    ├── busccador_ficheros/      # Ejercicio: Buscador de archivos en el sistema
+    ├── calculadora/             # Ejercicio: Calculadora con persistencia de datos
+    ├── count_words/             # Ejercicio: Contador de palabras en archivos
+    └── gestor_contactos/        # Ejercicio: Gestor de contactos con almacenamiento
+```
+
 ## Contenido
 
-### Ejercicios
-- `buscador_ficheros/` - Buscador de archivos en el sistema
-- `apts_ficheros.py` - Ejercicios varios con ficheros
-
-## Ejemplos
-```python
-# Lectura de archivo
-with open('archivo.txt', 'r') as f:
-    contenido = f.read()
-
-# Escritura
-with open('salida.txt', 'w') as f:
-    f.write("Hola mundo")
-```
+- **`apuntes_ficheros.py`** - Conceptos básicos y ejemplos de trabajo con ficheros
+- **`ejercicios/`** - Ejercicios prácticos para practicar el manejo de archivos
