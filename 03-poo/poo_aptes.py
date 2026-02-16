@@ -1,6 +1,9 @@
 # ============================================
 # 1. CLASES Y OBJETOS
 # ============================================
+print("="*30)
+print(f"{"CLASES Y OBJETOS":^30}")
+print("="*30)
 
 class Gato:
     """Modelo sencillo de un gato domestico."""
@@ -37,6 +40,9 @@ print(misifu.describir())
 # ============================================
 # 2. METODOS DE INSTANCIA VS CLASE
 # ============================================
+print("="*30)
+print(f"{"METODOS DE INSTANCIA VS CLASE":^30}")
+print("="*30)
 
 class Calculadora:
     total_calculos = 0
@@ -45,7 +51,7 @@ class Calculadora:
         self.calculos_instancia = 0
 
     def sumar(self, a, b):
-        Calculadora.total_calculos += 1
+        Calculadora.total_calculos += 1 # acceso a ATR DE CLASE
         self.calculos_instancia += 1
         return a + b
 
@@ -59,6 +65,26 @@ class Calculadora:
         return a + b
 
 
+"""
+M. INSTANCIA:
+    LLAMADA:
+    - a traves de objeto
+    ATRIBUTOS:
+    - atr. de instancia
+    - atr. de clase
+
+M. CLASE:
+    LLAMADA:
+    - a traves de clase
+    ATRIBUTOS:
+    - at. de clase
+
+M. ESTATICOS:
+    LLAMADA:
+    - a traves de clase
+    ATRIBUTOS:
+    - atr. pasados por parametro
+"""
 calc = Calculadora()
 print(Calculadora.sumar_como_clase(2, 3))
 print(calc.sumar(5, 7))
@@ -69,6 +95,9 @@ print(f"Total global: {Calculadora.total_calculos} | Instancia: {calc.calculos_i
 # ============================================
 # 3. ATRIBUTOS DE CLASE VS INSTANCIA
 # ============================================
+print("="*30)
+print(f"{"ATRIBUTOS DE CLASE VS INSTANCIA":^30}")
+print("="*30)
 
 class Contador:
     cantidad_global = 0
@@ -96,7 +125,9 @@ print(
 # ============================================
 # 4. HERENCIA Y POLIMORFISMO
 # ============================================
-
+print("="*30)
+print(f"{"HERENCIA Y POLIMORFISMO":^30}")
+print("="*30)
 
 class Animal:
     def __init__(self, especie):
@@ -132,6 +163,9 @@ for animal in animales:
 # ============================================
 # 5. ENCAPSULACION
 # ============================================
+print("="*30)
+print(f"{"ENCAPSULACION":^30}")
+print("="*30)
 
 
 class Persona:
@@ -148,16 +182,28 @@ class Persona:
             raise ValueError("El nombre no puede estar vacio")
         self.__nombre = nuevo_nombre
 
+""" 
+@property =>
+Convierte un método en un atributo de solo lectura. 
+Permite acceder al valor sin usar paréntesis.
+
+@nombre.setter =>
+Define cómo se asigna un nuevo valor al atributo. 
+Permite añadir validación.
+"""
 
 persona = Persona("Alicia")
-print(persona.nombre)
-persona.nombre = "Ada"
+print(persona.nombre) # llama al getter (@property)
+persona.nombre = "Ada" # llama al asetter (@nombre.setter)
 print(persona.nombre)
 
 
 # ============================================
 # 6. CLASES ABSTRACTAS
 # ============================================
+print("="*30)
+print(f"{"CLASES ABSTRACTAS":^30}")
+print("="*30)
 
 from abc import ABC, abstractmethod
 import math
@@ -166,7 +212,7 @@ import math
 class Figura(ABC):
     @abstractmethod
     def area(self):
-        raise NotImplementedError
+        raise (NotImplementedError)
 
 
 class Rectangulo(Figura):
@@ -194,6 +240,9 @@ for figura in figuras:
 # ============================================
 # 7. DUNDER METHODS
 # ============================================
+print("="*30)
+print(f"{"DUNDER METHODS":^30}")
+print("="*30)
 
 
 class Vector:
@@ -217,6 +266,6 @@ class Vector:
 
 v1 = Vector(1, 2)
 v2 = Vector(3, 4)
-print(v1)
-print(v1 + v2)
-print(v1 == Vector(1, 2))
+print(v1) # repr
+print(v1 + v2) # add
+print(v1 == Vector(1, 2)) # eq
