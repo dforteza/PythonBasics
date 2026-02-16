@@ -18,7 +18,7 @@ Organización del código en módulos reutilizables y paquetes.
 
 ## Contenido
 
-- **`apuntes_modulos.py`** - Conceptos de importación, uso de `__name__`, `sys.path` y organización de código
+- **`apuntes_modulos.py`** - Conceptos de importación
 - **`entornos_virtuales.txt`** - Documentación sobre creación y gestión de entornos virtuales
 - **`mi_modulo.py`** y **`otro_modulo.py`** - Ejemplos prácticos de módulos
 - **`mi_paquete/`** - Estructura de paquete Python con múltiples módulos
