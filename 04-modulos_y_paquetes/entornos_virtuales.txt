@@ -1,0 +1,104 @@
+================================================================================
+                    ENTORNOS VIRTUALES EN PYTHON (venv)
+================================================================================
+
+¿QUÉ ES?
+--------
+Carpeta aislada con su propio Python y librerías.
+Cada proyecto tiene su "armario" independiente.
+
+¿POR QUÉ USARLO?
+----------------
+• Evitar conflictos de versiones entre proyectos
+• No contaminar el Python del sistema
+• Reproducibilidad con requirements.txt
+
+================================================================================
+                           COMANDOS BÁSICOS
+================================================================================
+
+CREAR
+    python -m venv venv
+
+ACTIVAR
+    Linux/Mac:    source venv/bin/activate
+    Windows:      venv\Scripts\activate
+
+DESACTIVAR
+    deactivate
+
+VERIFICAR
+    which python          # Linux/Mac
+    where python          # Windows
+
+================================================================================
+                           LIBRERÍAS (pip)
+================================================================================
+
+INSTALAR
+    pip install requests numpy pandas
+
+VER INSTALADAS
+    pip list
+
+DESINSTALAR
+    pip uninstall requests
+
+================================================================================
+                          requirements.txt
+================================================================================
+
+GENERAR (exportar dependencias)
+    pip freeze > requirements.txt
+
+INSTALAR (en nuevo entorno)
+    pip install -r requirements.txt
+
+================================================================================
+                         FLUJO DE TRABAJO
+================================================================================
+
+PROYECTO NUEVO:
+    1. mkdir proyecto && cd proyecto
+    2. python -m venv venv
+    3. source venv/bin/activate
+    4. pip install libreria1 libreria2
+    5. pip freeze > requirements.txt
+
+CLONAR PROYECTO:
+    1. git clone url
+    2. cd proyecto
+    3. python -m venv venv
+    4. source venv/bin/activate
+    5. pip install -r requirements.txt
+
+AÑADIR LIBRERÍA:
+    1. pip install nueva-libreria
+    2. pip freeze > requirements.txt
+
+================================================================================
+                              .gitignore
+================================================================================
+
+# Añadir siempre:
+venv/
+__pycache__/
+*.pyc
+
+⚠️  NUNCA subir venv/ a Git
+✅  SÍ subir requirements.txt
+
+================================================================================
+                           RESUMEN RÁPIDO
+================================================================================
+
+    Crear:      python -m venv venv
+    Activar:    source venv/bin/activate
+    Instalar:   pip install nombre
+    Exportar:   pip freeze > requirements.txt
+    Importar:   pip install -r requirements.txt
+    Salir:      deactivate
+
+💡 Cada proyecto = 1 entorno virtual
+⚠️  Activar ANTES de instalar librerías
+================================================================================
