@@ -146,27 +146,21 @@ print("\nNota: __name__ == '__main__' solo cuando ejecutas el archivo directamen
 # 8. RESUMEN DE BUENAS PRÁCTICAS
 # ============================================
 
-print("\n" + "="*60)
-print("8. RESUMEN DE BUENAS PRÁCTICAS")
-print("="*60)
-
-resumen = """
-✅ RECOMENDADO:
+"""
+ RECOMENDADO:
    - import modulo
    - from modulo import funcion_especifica
    - import modulo as alias_corto
    
-⚠️  USAR CON CUIDADO:
+  USAR CON CUIDADO:
    - from modulo import *  (puede causar conflictos)
    
-📝 RECUERDA:
+   NOTAS:
    - Los módulos son archivos .py
    - Los paquetes son carpetas con __init__.py
    - __name__ == "__main__" para detectar ejecución directa
    - sys.path muestra dónde busca Python los módulos
 """
-
-print(resumen)
 
 # ============================================
 # PUNTO DE ENTRADA PRINCIPAL
@@ -174,9 +168,5 @@ print(resumen)
 
 if __name__ == "__main__":
     print("\n" + "="*60)
-    print("FIN DE LOS APUNTES")
+    print("FIN :) ")
     print("="*60)
-    print("\n💡 Ahora prueba ejecutar los otros archivos directamente:")
-    print("   python mi_modulo.py")
-    print("   python otro_modulo.py")
-    print("   python mi_paquete/matematicas.py")
