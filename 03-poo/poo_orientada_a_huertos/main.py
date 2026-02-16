@@ -1,6 +1,6 @@
 class Planta:
     """
-    Clase de atributos b´asicos de una planta
+    Clase de atributos basicos de una planta
     """
     def __init__(self, nombre):
         self.nombre = nombre
@@ -29,7 +29,9 @@ class Tomatera(Planta):
         self.agua = 0
     def recolectar(self):
         if self.altura > 20:
-            return ['tomate'] * int(self.altura/10)
+            frutos = ['tomate'] * int(self.altura/10)
+            self.altura -= 10
+            return (frutos)
         return []
         
 class Habas(Planta):
@@ -40,7 +42,9 @@ class Habas(Planta):
         self.agua = 0
     def recolectar(self):
         if self.altura > 10:
-            return ['habas'] * int(self.altura/5)
+            frutos =  ['habas'] * int(self.altura/5)
+            self.altura = 0
+            return (frutos)
         return []
 
 class Huerto:
@@ -124,45 +128,49 @@ if __name__ == "__main__":
         huerto.regar()
         huerto.crecer()
 
+    print("="*30)
+    print(f"{"RECOLECTAR":^30}")
+    print("="*30)
+
     cosecha = huerto.recolectar()
     print(cosecha)
 
     # 6
     Huerto.resumen(cosecha)
 
-print("="*30)
-print(f"{"PREGUNTAS EXTRA":^30}")
-print("="*30)
-# # 1. ¿Que ocurre si invocamos tomatera1.regar() dentro del bucle?
-#       Esa planta recibiría dos riegos en 
-#       cada iteración: uno por la llamada explícita y otro por 
-#       el riego general del huerto.
+    print("="*30)
+    print(f"{"PREGUNTAS EXTRA":^30}")
+    print("="*30)
+    # # 1. ¿Que ocurre si invocamos tomatera1.regar() dentro del bucle?
+    #       Esa planta recibiría dos riegos en 
+    #       cada iteración: uno por la llamada explícita y otro por 
+    #       el riego general del huerto.
 
 
-# # 2. ¿Los objetos dentro del objeto huerto pueden modificarse independientemente?
-#     Si. Cada planta es un objeto distinto; 
-#     puedes modificar uno sin tocar los demás:
+    # # 2. ¿Los objetos dentro del objeto huerto pueden modificarse independientemente?
+    #     Si. Cada planta es un objeto distinto; 
+    #     puedes modificar uno sin tocar los demás:
 
-tomatera1.altura = 50
-print(f'Tomatera1 altura => {tomatera1.altura}') # 50
-
-
-# # 3. ¿Que ocurrir´a si añadimos lineas adicionales de huerto.regar()?
-#     Añadir más llamadas a huerto.regar() simplemente repetirá el ciclo 
-#     de riego completo tantas veces como las invoques, incrementando la hidratación 
-#     (o cualquier efecto asociado) de todas las plantas cada vez.
+    tomatera1.altura = 50
+    print(f'Tomatera1 altura => {tomatera1.altura}') # 50
 
 
-# # 4. ¿Puedes acceder a la primera planta del huerto con huerto. plantas[0]?
-#     No, a menos que la clase Huerto implemente __getitem__, la expresión 
-#     huerto.plantas[0] no funcionará directamente. Necesitas un método 
-#     específico (por ejemplo, huerto.obtener_planta(0)) o exponer la lista de 
-#     forma controlada.
+    # # 3. ¿Que ocurrir´a si añadimos lineas adicionales de huerto.regar()?
+    #     Añadir más llamadas a huerto.regar() simplemente repetirá el ciclo 
+    #     de riego completo tantas veces como las invoques, incrementando la hidratación 
+    #     (o cualquier efecto asociado) de todas las plantas cada vez.
 
-print(f'1º hueco del huerto => {huerto[0]}') # tomatera1
 
-# # 5. ¿Puedes acceder a tomatera1.altura?
-        # Si al ser un atributo publico
-tomatera1.altura += 10
-print(f'Tomatera1 altura => {tomatera1.altura}')
+    # # 4. ¿Puedes acceder a la primera planta del huerto con huerto. plantas[0]?
+    #     No, a menos que la clase Huerto implemente __getitem__, la expresión 
+    #     huerto.plantas[0] no funcionará directamente. Necesitas un método 
+    #     específico (por ejemplo, huerto.obtener_planta(0)) o exponer la lista de 
+    #     forma controlada.
+
+    print(f'1º hueco del huerto => {huerto[0]}') # tomatera1
+
+    # # 5. ¿Puedes acceder a tomatera1.altura?
+            # Si al ser un atributo publico
+    tomatera1.altura += 10
+    print(f'Tomatera1 altura => {tomatera1.altura}')
 
