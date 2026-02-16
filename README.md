@@ -9,26 +9,22 @@ Repositorio personal con apuntes, ejercicios y proyectos para aprender Python de
 - Funciones lambda y funciones de orden superior
 - Ejercicios prácticos (Wordle, verificadores, etc.)
 
-### [02 - Programación Orientada a Objetos](./02-poo)
+### [02 - Manejo de Ficheros](./02-ficheros)
+- Lectura y escritura de archivos CSV, JSON y Pickle
+- Gestión de objetos datetime
+- Gestión de argumentos con **argsparse**
+- Búsqueda y manipulación de ficheros
+- Gestión de rutas con **os** y **Path**
+
+  
+### [03 - Programación Orientada a Objetos](./03-poo)
 - Clases y objetos
 - Herencia y polimorfismo
 - Encapsulación y métodos especiales (dunder methods)
 - Clases abstractas
 
-### [03 - Módulos y Paquetes](./03-modulos-paquetes)
+### [04 - Módulos y Paquetes](./04-modulos-paquetes)
 - Creación e importación de módulos
 - Organización en paquetes
 - Sistema de importación de Python
 - Entornos virtuales
-
-### [04 - Manejo de Ficheros](./04-ficheros)
-- Lectura y escritura de archivos
-- Búsqueda y manipulación de ficheros
-- Gestión de rutas
-
-### [05 - JSON](./05-json)
-- Parseo y serialización JSON
-- Ejercicios prácticos
-
-## 🛠️ Configuración
-```bash
