@@ -1,6 +1,6 @@
 # 03 - Programación Orientada a Objetos
 
-Conceptos de POO en Python basados en el paradigma orientado a objetos.
+*Conceptos de POO en Python basados en el paradigma orientado a objetos.*
 
 ## Estructura del directorio
 
@@ -24,3 +24,11 @@ Conceptos de POO en Python basados en el paradigma orientado a objetos.
 - **`poo_aptes.py`** - Conceptos fundamentales de POO: clases, objetos, métodos de instancia/clase/estáticos, atributos
 - **`ejercicios/`** - Ejercicios prácticos que cubren todos los aspectos de POO
 - **`poo_orientada_a_huertos/`** - Proyecto completo simple aplicando POO a un sistema de gestión de huertos
+
+## Ejecutar
+
+```bash
+cd 03-poo/poo_orientada_a_huertos
+pip install -r requirements.txt
+python main.py
+```

@@ -1,6 +1,6 @@
 # 04 - Módulos y Paquetes
 
-Organización del código en módulos reutilizables y paquetes.
+*Organización del código en módulos reutilizables y paquetes.*
 
 ## Estructura del directorio
 
@@ -18,7 +18,14 @@ Organización del código en módulos reutilizables y paquetes.
 
 ## Contenido
 
-- **`apuntes_modulos.py`** - Conceptos de importación
+- **`apuntes_modulos.py`** - Conceptos de importación de módulos y paquetes
 - **`entornos_virtuales.txt`** - Documentación sobre creación y gestión de entornos virtuales
 - **`mi_modulo.py`** y **`otro_modulo.py`** - Ejemplos prácticos de módulos
 - **`mi_paquete/`** - Estructura de paquete Python con múltiples módulos
+
+## Ejecutar
+
+```bash
+cd 04-modulos_y_paquetes
+python apuntes_modulos.py
+```

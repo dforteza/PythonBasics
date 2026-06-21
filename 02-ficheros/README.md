@@ -1,6 +1,6 @@
 # 02 - Manejo de Ficheros
 
-Lectura, escritura y manipulación de archivos en Python.
+*Lectura, escritura y manipulación de archivos en Python.*
 
 ## Estructura del directorio
 
@@ -17,5 +17,12 @@ Lectura, escritura y manipulación de archivos en Python.
 
 ## Contenido
 
-- **`apuntes_ficheros.py`** - Conceptos básicos y ejemplos de trabajo con ficheros
+- **`apuntes_ficheros.py`** - Conceptos básicos y ejemplos de trabajo con ficheros (CSV, JSON, Pickle, datetime, argparse, Path)
 - **`ejercicios/`** - Ejercicios prácticos para practicar el manejo de archivos
+
+## Ejecutar
+
+```bash
+cd 02-ficheros/ejercicios/gestor_contactos
+python gestor_contactos.py
+```
